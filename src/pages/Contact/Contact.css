@@ -1,0 +1,38 @@
+/*  Hero Section  */
+.contact .hero-background {
+    height: 30vh;
+    background-position: center;
+}
+
+/*  Contact Info  */
+.contact-content .contactInfo {
+    background-color: transparent;
+}
+
+/*  Responsive Design  */
+@media (max-width: 768px) {
+    .contact-content .contact-inputs {
+        flex-direction: column;
+    }
+}
+
+/*  Form Inputs  */
+.form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 5px rgba(142, 119, 84, 0.25);
+}
+
+/*  Send Button  */
+.contact-content .send {
+    padding: 10px 24px;
+    color: #fff;
+    font-weight: 700;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-content .send:hover {
+    background-color: #333333;
+    border: 2px solid #333333;
+}

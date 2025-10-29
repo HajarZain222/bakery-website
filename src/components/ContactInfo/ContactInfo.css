@@ -1,0 +1,27 @@
+.contactInfo-list {
+    margin-left: -30px;
+    list-style: none;
+    padding: 0;
+}
+.contactInfo-list li {
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+    margin-bottom: 10px; 
+}
+.contactInfo-list .icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; 
+}
+.contactInfo-list span {
+    color: var(--text-color);
+    font-size: 15px;
+}

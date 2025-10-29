@@ -1,0 +1,124 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    z-index: 999;
+}
+.navbar.navbar-scrolled {
+    height: 70px;
+}
+
+/* Home Page Navbar (Transparent at first) */
+.navbar-home {
+    background: transparent;
+}
+.navbar-home .nav-link {
+    color: #fff;
+}
+.navbar-home.navbar-scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar-home.navbar-scrolled .nav-link {
+    color: #333;
+}
+
+/* Inner Pages Navbar (Default White Background) */
+.navbar-inner {
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+.navbar-inner .nav-link {
+    color: #333;
+}
+
+/* Navbar Links Styles */
+.navbar .nav-link {
+    font-family: "Alegreya", sans-serif;
+    font-size: 18px;
+    margin-left: 18px;
+    transition: color 0.3s;
+    position: relative;
+}
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--main-color);
+}
+
+/* Active link underline effect */
+.navbar .nav-link.active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    margin-top: -19px;
+    background: var(--main-color);
+}
+.navbar-scrolled .nav-link.active::after {
+    margin-top: -14px;
+}
+
+/* Dropdown Menu Styles (Desktop) */
+.dropdown-menu {
+    background-color: #433e37f2;
+}
+.dropdown-item {
+    color: #ccc;
+}
+.dropdown-item:hover {
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 991px) {
+    .navbar {
+        background-color: #fff !important;
+    }
+
+    /* Change home links color to dark */
+    .navbar-home .nav-link {
+        color: #333;
+    }
+
+    /* Smooth dropdown (collapse) animation */
+    .navbar-collapse {
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .navbar-collapse.show {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 0;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    /* Remove underline for active link on mobile */
+    .navbar .nav-link.active::after {
+        display: none;
+    }
+
+    /* Mobile dropdown menu adjustments */
+    .dropdown-menu {
+        position: static;
+        background-color: #fff;
+        border: none;
+        padding-left: 50px;
+    }
+    .dropdown-item {
+        color: #333;
+    }
+    .dropdown-item:hover,
+    .dropdown-item.active {
+        color: var(--main-color);
+        background-color: transparent;
+    }
+}

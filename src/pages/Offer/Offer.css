@@ -1,0 +1,21 @@
+.offer .hero-background {
+    height: 30vh;
+    background-position: center;
+}
+
+/* Offer Section */
+.ourOffer .card-header h6,
+.ourOffer .card-header span {
+    font-family: "Alegreya", sans-serif;
+    font-size: 18px;
+}
+.ourOffer h6 {
+    color: #303030;
+}
+.ourOffer span {
+    color: #888;
+}
+.ourOffer .card-desc {
+    color: var(--text-color);
+    line-height: 32px;
+}

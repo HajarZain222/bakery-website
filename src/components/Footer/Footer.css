@@ -1,0 +1,91 @@
+.footer .top {
+    background-color: #403d38;
+    color: #fff;
+}
+.footer h5 {
+    font-family: "Alegreya", sans-serif;
+    margin-bottom: 20px;
+}
+
+/* ----- Lists & Text ----- */
+.footer .list {
+    margin-left: -30px;
+}
+.footer p,
+.footer .list li {
+    color: #969696;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.list li:not(:last-child) {
+    border-bottom: 1px solid #4a4742;
+}
+
+/* ----- List Icons ----- */
+.list li::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    margin-right: 5px;
+}
+.list.background li::before {
+    content: none;
+}
+
+/* ----- List Links (Background type) ----- */
+.list.background li a {
+    color: #969696;
+    transition: color 0.3s ease-in-out;
+}
+.list.background li a:hover {
+    color: #fff;
+}
+
+/* ----- List Background Image ----- */
+.list.background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../../assets/contact-details-map.png") center/contain no-repeat;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+/* ----- Bottom Section ----- */
+.bottom {
+    background-color: #353330;
+}
+.bottom p {
+    font-size: 15px;
+}
+
+/* ----- Social Icons ----- */
+footer .social-icons .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #484540;
+    color: #969696;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.social-icons .icon:hover {
+    color: #fff;
+}
+
+/* ----- Specific Social Hover Colors ----- */
+.social-icons .facebook:hover {
+    background-color: #3b5998;
+}
+.social-icons .google:hover {
+    background-color: #dd4b39;
+}
+.social-icons .linkedin:hover {
+    background-color: #007bb5;
+}
+.social-icons .twitter:hover {
+    background-color: #00aced;
+}

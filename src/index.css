@@ -1,0 +1,175 @@
+/* GLOBAL VARIABLES & RESETS */
+:root {
+    --main-color: #8e7754;
+    --text-color: #686868;
+    --heading-font: "Alegreya", sans-serif;
+    --body-font: "Alegreya Sans", sans-serif;
+    --bg-light: #f8f8f8;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--body-font);
+}
+
+ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* PAGE LAYOUT */
+.page-content {
+    transition: all 0.3s ease;
+}
+.page-content.inner {
+    padding-top: 80px;
+    background-color: #fff;
+}
+.page-content.home {
+    padding-top: 0;
+    background: transparent;
+}
+
+/* GALLERY CARD */
+.gallery-card .card-body h5 {
+    margin-top: 4px;
+}
+
+/* HERO SECTION */
+.hero-background {
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.1)
+        ),
+        url("./assets/drew-coffman.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.hero-title {
+    font-family: var(--heading-font);
+    font-size: 56px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.hero-desc {
+    font-size: 18px;
+}
+.hero-links a {
+    color: #d9d9d9;
+}
+.hero-links a:hover {
+    color: var(--main-color);
+}
+
+/* PAGE HEADER */
+.page-header {
+    min-height: 30vh;
+    background-color: var(--bg-light);
+    position: relative;
+}
+.page-header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.page-title {
+    font-family: var(--heading-font);
+    font-size: 36px;
+    font-weight: 400;
+    color: #303030;
+    margin-bottom: 20px;
+}
+.page-desc,
+.page-desc a {
+    color: var(--text-color);
+    font-size: 18px;
+}
+.page-links,
+.page-links a {
+    color: var(--text-color);
+    font-size: 15px;
+}
+.page-links a:hover {
+    color: var(--main-color);
+}
+
+/* SECTION STYLES */
+.s-title {
+    font-family: var(--heading-font);
+    font-size: 32px;
+    font-weight: 400;
+    color: #303030;
+}
+.s-desc {
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 32px;
+}
+
+/* CARD COMPONENTS */
+.card .card-title {
+    font-family: var(--heading-font);
+    font-size: 20px;
+    font-weight: 400;
+    color: #303030;
+    transition: color 0.3s ease;
+}
+.card .card-title:hover {
+    color: var(--main-color);
+}
+.card .card-subtitle {
+    font-size: 13px;
+    color: #aaa;
+    margin-bottom: 10px;
+}
+.card .card-text {
+    font-size: 17px;
+    color: var(--text-color);
+    line-height: 33px;
+}
+.card .card-body a {
+    font-size: 14px;
+    color: var(--text-color);
+}
+.card .card-body a:hover {
+    color: var(--main-color);
+}
+
+/* BLOCKQUOTE */
+.blockquote {
+    background-color: var(--main-color);
+    color: #fff !important;
+    transition: background-color 0.3s ease-in-out;
+}
+.blockquote:hover {
+    background-color: #333;
+}
+.blockquote p,
+.blockquote-footer {
+    color: #fff !important;
+}
+.blockquote .quote-icon {
+    color: #adadad;
+}
+

@@ -1,0 +1,46 @@
+/* Hero Section (About Page) */
+.about .hero-background {
+    height: 30vh;
+    background-position: bottom;
+}
+
+/* Why Our Bakery Section */
+.whyOurBakery {
+    background-color: #F8F8F8;
+}
+.whyOurBakery .icon {
+    font-size: 40px;
+    color: var(--main-color);
+}
+.whyOurBakery .card {
+    background-color: transparent;
+    margin-bottom: 20px;
+}
+.whyOurBakery .card-title {
+    font-size: 18px;
+}
+
+/* Stats Section */
+.stats {
+    background-color: var(--main-color);
+}
+.stats .card {
+    background-color: transparent;
+    color: #fff;
+    text-align: center;
+}
+.stats .card-icon {
+    font-size: 34px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.stats .card-stats {
+    font-family: "Alegreya", sans-serif;
+    font-size: 52px;
+    margin: 10px 0;
+}
+.stats .card-desc {
+    font-size: 20px;
+}
+
+

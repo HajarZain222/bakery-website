@@ -1,0 +1,95 @@
+/* General Styles for All Posts */
+.simple-post-content,
+.gallery-post-content,
+.basic-post-content,
+.quote-post-content {
+    max-width: 70%;
+    margin: 0 auto;
+}
+.simple-post-content .image img,
+.gallery-post-content .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.simple-post-content .desc,
+.gallery-post-content .desc,
+.basic-post-content .desc,
+.quote-post-content .desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 20px 0;
+    line-height: 31px;
+    text-align: left;
+}
+
+.text-with-image::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Quote Icons */
+.quote-icon-left {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    color: #C3C3C3;
+}
+.quote-icon-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #C3C3C3;
+}
+
+/* Post Titles */
+.gallery-post-content .title,
+.basic-post-content .title,
+.quote-post-content .title {
+    font-family: "Alegreya", sans-serif;
+    font-size: 18;
+    font-weight: 500;
+    color: #303030;
+}
+
+/* Simple Post */
+.simple-post-content .image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Gallery Post */
+.gallery-post-content .carousel-inner .carousel-item {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+}
+
+/* Basic Post */
+.basic-post-content .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.basic-post-content .buttons a {
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #303030;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.basic-post-content .buttons a:hover {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff;
+}

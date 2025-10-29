@@ -1,0 +1,46 @@
+.comments__title {
+    font-family: "Alegreya", sans-serif;
+    font-size: 18px;
+    color: #303030;
+    margin-bottom: 20px;
+}
+.comments__image img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    margin-right: 5px;
+}
+.comments__name h6 {
+    font-family: "Open Sans", arial;
+    font-size: 16px;
+    color: #303030;
+}
+.comments__name span {
+    font-family: "Open Sans", arial;
+    font-size: 13px;
+    color: #7b7b7b;
+}
+.comments__description {
+    font-size: 17px;
+    color: var(--text-color);
+}
+.comments__reply-btn {
+    color: #333;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease-in-out;
+}
+.comments__reply-btn:hover {
+    color: #fff;
+    background-color: var(--main-color);
+}
+@media (max-width: 787px) {
+    .comments__item,
+    .comments__content {
+        flex-direction: column;
+    }
+    .comments__image img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px auto;
+    }
+}

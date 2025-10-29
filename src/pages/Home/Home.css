@@ -1,0 +1,118 @@
+/* HERO SECTION */
+.home .hero-background {
+    height: 100vh;
+    background-position: center;
+}
+
+/* ---- Hero Content ---- */
+.hero-content {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-content .welcome {
+    font-size: 22px;
+}
+.hero-content h1 {
+    font-family: var(--heading-font);
+    font-size: 75px;
+    font-weight: 400;
+}
+.hero-content .description {
+    font-size: 22px;
+}
+.hero-content .buttons .btn {
+    padding: 10px 28px;
+    color: #fff;
+    font-weight: 700;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.hero-content .learn {
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.hero-content .contact {
+    background-color: transparent;
+    border: 2px solid #fff;
+}
+.hero-content .learn:hover,
+.hero-content .contact:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+}
+
+/* Scroll Mouse Icon */
+.hero-content .mouse {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    height: 55px;
+    transform: translateX(-50%);
+    border: 2px solid #fff;
+}
+.mouse .mouse-dot {
+    width: 8px;
+    height: 8px;
+    animation: scrollDown 1.5s infinite;
+}
+
+/* Scroll Animation */
+@keyframes scrollDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0.5;
+        transform: translateY(15px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+}
+
+/* WHO WE ARE SECTION */
+.whoWeAre .features li .icon {
+    font-size: 20px;
+    color: var(--main-color);
+    border: 1px solid var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-left: -25px;
+}
+.features li span {
+    color: var(--text-color);
+    font-size: 17px;
+}
+
+/* OUR LOCATION SECTION */
+.ourLocation {
+    background-color: var(--bg-light);
+}
+
+/* OUR BAKING SECTION */
+.card .card-title {
+    font-family: var(--heading-font);
+    font-size: 22px;
+    font-weight: 400;
+    color: #303030;
+    margin: 20px 0;
+}
+.card .card-text {
+    color: var(--text-color);
+    font-size: 17px;
+    line-height: 32px;
+}
+
+/* CONTACT INFO SECTION */
+.contactInfo {
+    background-color: var(--bg-light);
+}
