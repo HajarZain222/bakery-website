@@ -6,6 +6,14 @@
     max-width: 70%;
     margin: 0 auto;
 }
+@media (max-width: 767px) {
+    .simple-post-content,
+    .gallery-post-content,
+    .basic-post-content,
+    .quote-post-content {
+    max-width: 95%;
+    }
+}
 .simple-post-content .image img,
 .gallery-post-content .carousel-item img {
     width: 100%;

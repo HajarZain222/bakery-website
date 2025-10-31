@@ -4,7 +4,7 @@ function CategoryPage({ categoryName, posts }) {
     return (
         <>
         <header className={`${categoryName} page-header`}>
-            <div className="container page-header-content d-flex justify-content-between align-items-center">
+            <div className="container page-header-content d-flex flex-column flex-md-row justify-content-between align-items-center">
             <h2 className='page-title'>Archives</h2>
             <div className="page-links d-flex justify-content-center gap-2">
                 <a href="/">Home</a>

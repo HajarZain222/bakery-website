@@ -8,7 +8,7 @@ function Blog() {
     return (
         <>
         <header className="Blog page-header">
-            <div className="container page-header-content d-flex justify-content-between align-items-center">
+            <div className="container page-header-content d-flex flex-column flex-md-row justify-content-between align-items-center">
             <h2 className="page-title">Blog</h2>
             <div className="page-links d-flex justify-content-center gap-2">
                 <a href="/">Home</a>
